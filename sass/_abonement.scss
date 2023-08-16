@@ -1,0 +1,133 @@
+.abonement {
+  &__price {
+    padding: 140px 0 81px 0;
+
+    @media screen and (max-width: 992px) {
+      padding: 53px 0 53px 32px;
+      margin-right: 0;
+      display: block;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 0 0 34px 0;
+    margin-right: 40px;
+
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      padding: 0 32px 32px 32px;
+      margin-right: 0px;
+      display: block;
+    }
+
+    &-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      border: 6px solid $dark;
+      max-width: 310px;
+      min-height: 624px;
+      padding: 69px 30px 32px 38px;
+
+      @media screen and (max-width: 992px) {
+        padding: 62px 56px 66px 65px;
+        max-width: 100%;
+        min-height: 248px;
+        flex-direction: row;
+        width: 992px;
+        position: relative;
+      }
+
+      &:hover {
+
+        border: 6px solid $general;
+        transform: scale(1.1);
+      }
+    }
+
+    &-icon {
+      margin-bottom: 24px;
+      font-size: 40px;
+      border: 4px solid $dark;
+      padding-top: 15px;
+      width: 76px;
+      height: 76px;
+      text-align: center;
+      font-weight: 700;
+      border-radius: 50%;
+    }
+
+    &-mounth {
+      color: $dark;
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      padding-bottom: 74px;
+
+      @media screen and (max-width: 992px) {
+        padding-bottom: 0px;
+        position: relative;
+        right: 88px;
+        top: 59px;
+      }
+    }
+
+    &-discription {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin: 0 0 36px 0;
+
+      @media screen and (max-width: 992px) {
+        margin: 0 0 0 0;
+        width: 337px;
+        position: relative;
+        right: 46px;
+      }
+    }
+
+    &-cost {
+      color: $dark;
+      margin-bottom: 16px;
+      font-size: 45px;
+      font-weight: 900;
+      letter-spacing: 2.25px;
+
+      @media screen and (max-width: 992px) {
+        margin-bottom: 0;
+        position: absolute;
+        right: 20px;
+        top: 75px;
+      }
+    }
+
+    &-button {
+      border: none;
+      padding: 11px 0;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      background: transparent;
+      transition: all 1s ease;
+
+      @media screen and (max-width: 992px) {
+        position: relative;
+        top: 53px;
+        left: 66px;
+      }
+    }
+  }
+}
+
+.abonement__main-card:hover .abonement__main-icon {
+  color: $general;
+  cursor: pointer;
+  border: 4px solid $general;
+  border-radius: 50%;
+}

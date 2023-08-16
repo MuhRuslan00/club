@@ -1,0 +1,51 @@
+// coclors 
+$general: #FF8340;
+$dark: #292929;
+$click-button: #843500;
+$section-color: #ffff;
+
+*,
+a {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 992px) {
+    max-width: 992px;
+  }
+}
+
+.button {
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border: none;
+  padding: 11px 32px;
+  text-transform: uppercase;
+  background: transparent;
+
+}
+
+.section-title {
+  font-size: clamp(40px, 5vw, 80px);
+}
+
+.text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+}

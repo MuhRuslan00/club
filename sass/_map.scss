@@ -1,0 +1,22 @@
+.map {
+  &__content {
+    padding: 115px 0 46px 0;
+
+    @media screen and (max-width: 992px) {
+      padding: 53px 0 28px 32px;
+    }
+
+    &-title {
+      color: $dark;
+      font-family: Arial;
+      font-size: 80px;
+
+      font-weight: 900;
+      line-height: 90px;
+    }
+
+    &-image {
+      min-height: 681px;
+    }
+  }
+}

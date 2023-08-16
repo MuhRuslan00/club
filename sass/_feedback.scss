@@ -1,0 +1,117 @@
+.feedback {
+  background-color: $general;
+}
+
+.feedback__page {
+  padding: 40px 0 165px 0;
+
+  @media screen and (max-width: 992px) {
+    padding: 32px 32px 21px 32px;
+  }
+}
+
+.feedback__title {
+  color: $dark;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 160px;
+  letter-spacing: 2.25px;
+  padding-bottom: 35px;
+
+  @media screen and (max-width: 992px) {
+    font-size: 32px;
+    letter-spacing: 1.6px;
+    padding-bottom: 38px;
+    line-height: normal;
+  }
+}
+
+.feedback__line {
+  width: 64px;
+  height: 6px;
+  background-color: $dark;
+  margin: 0 auto 50px auto;
+  margin-bottom: 50px;
+}
+
+.feedback__description {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  width: 100%;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 992px) {
+    margin-bottom: 30px;
+
+  }
+}
+
+// Forms
+.feedback__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px 0;
+
+  @media screen and (max-width: 992px) {
+    gap: 20px 0;
+  }
+
+  &-item {
+    width: 48%;
+    padding: 18px 0 17px 34px;
+    box-sizing: border-box;
+    color: $click-button;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    @media screen and (max-width: 992px) {
+      width: 49%;
+    }
+  }
+
+  &-select {
+    background-color: $dark;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+
+  &-message {
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  &-submit {
+    &-input {
+      &::placeholder {
+        color: #b0b0b0;
+      }
+    }
+
+    border: none;
+    padding: 11px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-left: auto;
+    text-transform: uppercase;
+    background: transparent;
+    transition: all 1s ease;
+
+    &:hover {
+      color: $click-button;
+    }
+
+    &:visited {
+      color: $click-button;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.main {
+  &__page-color {
+    background-color: #ebebe9;
+    overflow: hidden;
+  }
+
+  .inner__main {
+    display: flex;
+    position: relative;
+    min-height: 816px;
+    padding: 119px 0px 0 0;
+
+    @media screen and (max-width: 992px) {
+      padding: 96px 32px 0 0;
+      min-height: 605px;
+    }
+
+    &-image {
+      position: absolute;
+      width: 68%;
+      bottom: 0;
+      left: -194px;
+      z-index: 1;
+
+      @media screen and (max-width: 992px) {
+        left: -71px;
+
+      }
+    }
+
+    &-title {
+      position: absolute;
+      // max-width: 1123px;
+      color: #cfcfcd;
+      font-family: Arial;
+      font-size: clamp(40px, 10vw, 160px);
+      font-weight: 900;
+      line-height: 160px;
+      letter-spacing: 8px;
+      left: 228px;
+
+      @media screen and (max-width: 992px) {
+        line-height: 100px;
+        letter-spacing: 5px;
+        left: 138px;
+        width: 693px;
+      }
+    }
+
+    &-discription {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      max-width: 587px;
+      height: 207px;
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      left: 781px;
+      margin-bottom: 14px;
+      top: 237px;
+
+      @media screen and (max-width: 992px) {
+        max-width: 363px;
+        height: 309px;
+        top: 14px;
+        left: 594px;
+      }
+    }
+
+    &-button {
+      position: relative;
+      top: 454px;
+      left: 224px;
+      background-color: #ebebe9;
+
+      &:hover {
+        color: $general;
+        transition: all 1s ease;
+      }
+
+      &:visited {
+        color: $click-button;
+      }
+
+      @media screen and (max-width: 992px) {
+        top: 325px;
+      }
+    }
+  }
+}

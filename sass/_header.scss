@@ -1,0 +1,97 @@
+.header {
+  background-color: #EBEBE9;
+  position: relative;
+  z-index: 2;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 10px 0;
+
+    @media screen and (max-width: 992px) {
+      padding: 16px 32px 0 32px;
+    }
+
+    &-logo {
+      max-width: 100%;
+
+      @media screen and (max-width: 992px) {
+        width: 13%;
+      }
+    }
+
+    &-navigation {
+      display: flex;
+
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+
+  .navigation__list {
+    display: flex;
+
+    &-item {
+      margin: 0 32px 0 32px;
+      list-style: none;
+    }
+
+    &-link {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $dark;
+      text-decoration: none;
+
+      &:hover {
+        transition: all 1s ease;
+        color: $general;
+      }
+    }
+  }
+
+  .burger {
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    display: none;
+    z-index: 1;
+
+    @media screen and (max-width: 992px) {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    &__line {
+      height: 3px;
+      width: 26px;
+      background-color: $dark;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 11px;
+        height: 3px;
+        width: 26px;
+        background-color: $dark;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -11px;
+        height: 3px;
+        width: 26px;
+        background-color: $dark;
+      }
+    }
+  }
+}
